@@ -103,7 +103,9 @@ Can::Can(int argc, char** argv)
 {
 
     CanConfigure();
+    printf("Can bus configuration completed\n");
     TcpConfigure(argc,argv);
+    printf("TCP configuration completed\n");
     RadarRecord.open("RadarData.txt");
 
 }
